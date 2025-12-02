@@ -20,6 +20,7 @@ CSS STRUCTURE:
 5. FULL SLIDER
 6. FEATURED CATEGORIES
 7. PRODUCT LIST 1
+8. SALE OFFER BOXES
 --------------------------------------*/
 
 
@@ -551,4 +552,48 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+/*------------------------------------*/
+/* 8. SALE OFFER BOXES                */
+/*------------------------------------*/
+.sale{
+    width:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+  
+}
+.sale-box{
+    width:280px;
+    border-radius: 20px;
+    margin: 20px;
+    position: relative;
+    flex-grow: 0.5;
+}
+.sale-box img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center right;
+}
+.sale-text{
+    position: absolute;
+    left: 20%;
+    top: 50%;
+    transform: translate(-20%,-50%);
+    display: flex;
+    flex-direction: column;
+}
+.sale-box a{
+    color: #1b1919;
+}
+.sale-text strong{
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 80%;
+    line-height: 23px;
 }
